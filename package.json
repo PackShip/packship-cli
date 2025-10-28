@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
-    "axios": "^1.8.2",
+    "axios": "^1.13.0",
     "change-case": "^5.4.4",
     "chokidar": "^4.0.0",
     "commander": "^12.1.0",
