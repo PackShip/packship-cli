@@ -174,6 +174,14 @@ export async function createPackage() {
             packageData.scripts.build = "npm run build-webpack";
         }
     }
+    // Add a basic build script for JavaScript projects when webpack is not selected
+    // Note: React projects already have a build script from the React-specific section above
+    if (!useWebpack && languageChoice === "JavaScript" &&
+        typeof projectType === "string" &&
+        (projectType === "vanilla-js" || projectType === "node-js") &&
+        packageData.scripts && !packageData.scripts.build) {
+        packageData.scripts.build = "mkdir -p dist && cp src/index.js dist/";
+    }
     if (useEslint && packageData.scripts) {
         packageData.devDependencies = {
             ...packageData.devDependencies,

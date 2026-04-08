@@ -46,13 +46,16 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
-    "axios": "^1.13.0",
+    "axios": "^1.13.5",
     "change-case": "^5.4.4",
     "chokidar": "^4.0.0",
     "commander": "^12.1.0",
     "dotenv": "^16.4.5",
-    "handlebars": "^4.7.8",
-    "inquirer": "^10.1.8",
+    "handlebars": "^4.7.9",
+    "inquirer": "^13.4.1",
     "liftoff": "^5.0.0"
+  },
+  "overrides": {
+    "brace-expansion": "1.1.13"
   }
 }

@@ -13,3 +13,6 @@ dist
 
 # Keys
 *.key 
+
+# modules
+node_modules/*
